@@ -200,8 +200,17 @@ async def get_dashboard(company_id: str, db: AsyncSession = Depends(get_db)):
             dso=ccc_dict["dso"],
             dpo=ccc_dict["dpo"],
             concentration_risk_pct=concentration_pct,
-            concentration_debtor=top_debtor
+            concentration_debtor=top_debtor,
+            # Frontend compatibility aliases:
+            open_ar=round(pending_ar, 2),
+            overdue_ar=round(overdue_ar, 2),
+            cash_conversion_cycle_days=ccc_dict["cash_conversion_cycle"],
+            days_sales_outstanding=ccc_dict["dso"],
+            days_payable_outstanding=ccc_dict["dpo"],
+            concentration_pct=concentration_pct,
+            top_debtor=top_debtor
         ),
         forecast_chart=chart_data,
-        alerts=alerts
+        alerts=alerts,
+        high_risk_invoices=high_risk_invoices
     )

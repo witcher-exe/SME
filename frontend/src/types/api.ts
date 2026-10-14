@@ -24,14 +24,21 @@ export interface RunwayData {
 
 export interface MetricsData {
   liquid_cash: number;
-  open_ar: number;
-  overdue_ar: number;
+  open_ar?: number;
+  pending_receivables?: number;
+  overdue_ar?: number;
+  overdue_receivables?: number;
   overdue_count: number;
-  cash_conversion_cycle_days: number;
-  days_sales_outstanding: number;
-  days_payable_outstanding: number;
+  cash_conversion_cycle_days?: number;
+  cash_conversion_cycle?: number;
+  days_sales_outstanding?: number;
+  dso?: number;
+  days_payable_outstanding?: number;
+  dpo?: number;
   concentration_pct?: number | null;
+  concentration_risk_pct?: number | null;
   top_debtor?: string | null;
+  concentration_debtor?: string | null;
 }
 
 export interface ForecastChartData {

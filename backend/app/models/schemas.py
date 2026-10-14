@@ -39,6 +39,22 @@ class PaginatedResponse(BaseModel, Generic[T]):
 
 # --- 2. Dashboard Schemas ---
 
+class InvoiceData(BaseModel):
+    id: str
+    invoice_number: str
+    debtor_name: str
+    debtor_email: Optional[str] = None
+    amount: float
+    currency: str
+    issued_date: str
+    due_date: str
+    paid_date: Optional[str] = None
+    status: InvoiceStatus
+    days_overdue: int
+    p_delay: Optional[float] = None
+    predicted_delay_days: Optional[int] = None
+    risk_level: Optional[RiskLevel] = None
+
 class MetricsData(BaseModel):
     liquid_cash: float
     pending_receivables: float
@@ -50,6 +66,15 @@ class MetricsData(BaseModel):
     dpo: Optional[float] = None
     concentration_risk_pct: Optional[float] = None
     concentration_debtor: Optional[str] = None
+
+    # Frontend aliases
+    open_ar: Optional[float] = None
+    overdue_ar: Optional[float] = None
+    cash_conversion_cycle_days: Optional[float] = None
+    days_sales_outstanding: Optional[float] = None
+    days_payable_outstanding: Optional[float] = None
+    concentration_pct: Optional[float] = None
+    top_debtor: Optional[str] = None
 
 class RunwayData(BaseModel):
     days_left: int
@@ -85,6 +110,7 @@ class DashboardResponse(BaseModel):
     metrics: MetricsData
     forecast_chart: ForecastChartData
     alerts: List[AlertData]
+    high_risk_invoices: List[InvoiceData] = Field(default_factory=list)
 
 # --- 3. Forecast Schemas ---
 
@@ -184,22 +210,6 @@ class FinancingResponse(BaseModel):
     computed_at: str
 
 # --- 6. Invoice Schemas ---
-
-class InvoiceData(BaseModel):
-    id: str
-    invoice_number: str
-    debtor_name: str
-    debtor_email: Optional[str] = None
-    amount: float
-    currency: str
-    issued_date: str
-    due_date: str
-    paid_date: Optional[str] = None
-    status: InvoiceStatus
-    days_overdue: int
-    p_delay: Optional[float] = None
-    predicted_delay_days: Optional[int] = None
-    risk_level: Optional[RiskLevel] = None
 
 class InvoiceListResponse(BaseModel):
     items: List[InvoiceData]

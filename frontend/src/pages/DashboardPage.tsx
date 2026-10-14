@@ -64,7 +64,13 @@ export const DashboardPage: React.FC = () => {
     );
   }
 
-  const { runway, metrics, forecast_chart, alerts, high_risk_invoices } = data;
+  const {
+    runway,
+    metrics,
+    forecast_chart,
+    alerts = [],
+    high_risk_invoices = []
+  } = data || {};
 
   return (
     <div className="space-y-6 animate-in fade-in duration-200">
@@ -95,44 +101,44 @@ export const DashboardPage: React.FC = () => {
         {/* Card 1: Liquid Cash */}
         <MetricCard
           title="Liquid Cash Balance"
-          value={formatCurrency(metrics.liquid_cash, data.company.currency)}
+          value={formatCurrency(metrics?.liquid_cash ?? 0, data?.company?.currency || 'BDT')}
           sublabel="Available immediately in operating accounts"
-          status={metrics.liquid_cash > 250000 ? 'solvency' : 'warning'}
+          status={(metrics?.liquid_cash ?? 0) > 250000 ? 'solvency' : 'warning'}
           icon={<Wallet className="w-4 h-4" />}
         />
 
         {/* Card 2: Cash Runway */}
         <MetricCard
           title="Cash Runway"
-          value={`${runway.days_left} days`}
+          value={`${runway?.days_left ?? 0} days`}
           sublabel={
-            runway.shortfall_date
+            runway?.shortfall_date
               ? `Deficit expected on ${runway.shortfall_date}`
               : 'Solvent across 90 days'
           }
-          trend={runway.status.toUpperCase()}
-          trendDirection={runway.days_left < 30 ? 'down' : 'neutral'}
-          status={runway.days_left < 30 ? 'shortfall' : 'solvency'}
+          trend={(runway?.status || 'healthy').toUpperCase()}
+          trendDirection={(runway?.days_left ?? 90) < 30 ? 'down' : 'neutral'}
+          status={(runway?.days_left ?? 90) < 30 ? 'shortfall' : 'solvency'}
           icon={<Clock className="w-4 h-4" />}
         />
 
         {/* Card 3: Overdue AR */}
         <MetricCard
           title="High-Risk Overdue AR"
-          value={formatCurrency(metrics.overdue_ar, data.company.currency)}
-          sublabel={`${metrics.overdue_count} customer invoices past due date`}
-          trend={metrics.overdue_ar > 0 ? 'CRITICAL' : 'CLEAN'}
-          trendDirection={metrics.overdue_ar > 0 ? 'down' : 'up'}
-          status={metrics.overdue_ar > 0 ? 'shortfall' : 'solvency'}
+          value={formatCurrency(metrics?.overdue_ar ?? metrics?.overdue_receivables ?? 0, data?.company?.currency || 'BDT')}
+          sublabel={`${metrics?.overdue_count ?? 0} customer invoices past due date`}
+          trend={(metrics?.overdue_ar ?? metrics?.overdue_receivables ?? 0) > 0 ? 'CRITICAL' : 'CLEAN'}
+          trendDirection={(metrics?.overdue_ar ?? metrics?.overdue_receivables ?? 0) > 0 ? 'down' : 'up'}
+          status={(metrics?.overdue_ar ?? metrics?.overdue_receivables ?? 0) > 0 ? 'shortfall' : 'solvency'}
           icon={<AlertTriangle className="w-4 h-4" />}
         />
 
         {/* Card 4: Working Capital CCC */}
         <MetricCard
           title="Cash Conversion Cycle"
-          value={`${metrics.cash_conversion_cycle_days.toFixed(0)} days`}
-          sublabel={`DSO: ${metrics.days_sales_outstanding.toFixed(0)}d · DPO: ${metrics.days_payable_outstanding.toFixed(0)}d`}
-          status={metrics.cash_conversion_cycle_days > 60 ? 'warning' : 'solvency'}
+          value={`${Number(metrics?.cash_conversion_cycle_days ?? metrics?.cash_conversion_cycle ?? 0).toFixed(0)} days`}
+          sublabel={`DSO: ${Number(metrics?.days_sales_outstanding ?? metrics?.dso ?? 0).toFixed(0)}d · DPO: ${Number(metrics?.days_payable_outstanding ?? metrics?.dpo ?? 0).toFixed(0)}d`}
+          status={Number(metrics?.cash_conversion_cycle_days ?? metrics?.cash_conversion_cycle ?? 0) > 60 ? 'warning' : 'solvency'}
           icon={<Layers className="w-4 h-4" />}
         />
       </div>
@@ -248,7 +254,7 @@ export const DashboardPage: React.FC = () => {
               </tr>
             </thead>
             <tbody className="divide-y divide-[#1E2230]">
-              {high_risk_invoices.slice(0, 4).map((inv) => (
+              {(high_risk_invoices || []).slice(0, 4).map((inv) => (
                 <tr key={inv.id} className="hover:bg-[#181B24]/60 transition-colors">
                   <td className="py-3 px-3 font-mono font-medium text-slate-200">
                     {inv.invoice_number}
