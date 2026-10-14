@@ -15,9 +15,14 @@ class Settings(BaseSettings):
     DATABASE_URL: str = DEFAULT_DB
     
     # LLM Settings
-    LLM_PROVIDER: str = "openai"
-    LLM_MODEL: str = "gpt-4o-mini"
+    LLM_PROVIDER: str = "gemini"
+    LLM_MODEL: str = "gemini-3.1-flash-lite"
     LLM_API_KEY: str = ""
+    GEMINI_API_KEY: str = ""
+
+    @property
+    def active_llm_key(self) -> str:
+        return self.GEMINI_API_KEY or self.LLM_API_KEY
     
     # Security & PII
     HMAC_SECRET_KEY: str = "auracfo-super-secret-hmac-salt-key-2026"

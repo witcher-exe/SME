@@ -23,10 +23,11 @@ async def lifespan(app: FastAPI):
     logger.info("Database schema initialized.")
 
     # 2. Check LLM availability / activate mock mode
-    if not settings.LLM_API_KEY:
+    if not settings.active_llm_key:
         settings.MOCK_LLM = True
         logger.info("No LLM API key detected. MOCK_LLM auto-activated for offline evaluation.")
     else:
+        settings.MOCK_LLM = False
         logger.info(f"LLM Provider configured: {settings.LLM_PROVIDER} ({settings.LLM_MODEL}).")
 
     # 3. Auto-seed benchmark on empty database (Winning Factor #4)

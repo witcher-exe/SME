@@ -17,6 +17,7 @@ from app.security.injection_guard import InjectionGuard
 from app.security.pii_sanitizer import PIISanitizer
 from app.security.audit_logger import AuditLogger
 from app.mock.mock_llm import MockLLM
+from app.services.gemini_service import GeminiService
 from app.engines.forecast_engine import ForecastEngine
 from app.engines.matching_engine import MatchingEngine
 
@@ -85,8 +86,8 @@ async def chat_sse(request: ChatRequest):
         })
         await asyncio.sleep(0.2)
 
-        # 3. Retrieve response trace from MockLLM / LangGraph
-        mock_resp = MockLLM.get_response(sanitized_msg, request.persona)
+        # 3. Retrieve response trace from Gemini (or MockLLM fallback)
+        mock_resp = await GeminiService.generate_response(sanitized_msg, request.persona)
 
         for thought in mock_resp["thoughts"]:
             yield format_sse({
