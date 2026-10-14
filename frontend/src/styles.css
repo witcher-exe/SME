@@ -69,11 +69,14 @@ html.dark {
 .dark .app-sidebar { background: var(--sidebar-background); border-color: var(--border); }
 .dark .topbar { background: oklch(0.145 0.002 260); border-color: var(--border); }
 .dark .main-shell { background: radial-gradient(ellipse at 73% 0%, var(--shell-light), transparent 48%), var(--background); }
-.dark .panel { background: var(--card); border-color: var(--border); box-shadow: var(--panel-shadow); }
+.dark .panel { background: var(--panel-gradient), var(--card); border-color: var(--border); box-shadow: var(--panel-shadow); }
 .dark .metric-card { background: var(--panel-gradient), var(--card); border-color: var(--border); }
 .dark .metric-icon { color: var(--primary); background: var(--muted); }
+.dark .nav-link:hover { background: var(--muted); color: var(--foreground); }
+.dark .nav-link.active { background: linear-gradient(100deg, var(--secondary), var(--muted)); color: var(--foreground); box-shadow: inset 0 1px 0 var(--border); }
+.dark .nav-link.active svg { color: var(--primary); }
 .dark .insight-panel { background: color-mix(in oklch, var(--primary) 10%, var(--card)); border-color: color-mix(in oklch, var(--primary) 28%, var(--border)); }
-.dark .runway-panel { background: var(--card); border-color: var(--border); }
+.dark .runway-panel { background: var(--panel-gradient), var(--card); border-color: var(--border); }
 .dark .company-select option { background: var(--card); color: var(--foreground); }
 .dark input[type='checkbox'], .dark progress { accent-color: var(--primary); }
 .dark .range-control { accent-color: var(--primary); }
