@@ -92,19 +92,38 @@ export const CopilotDrawer: React.FC<CopilotDrawerProps> = ({ isOpen, onClose, c
                 const data = JSON.parse(line.substring(6));
 
                 if (data.type === 'thought') {
+                  const step = data.step || (data.agent ? data.agent.replace('_', ' ').toUpperCase() : 'AGENT');
+                  const detail = data.detail || data.text || '';
                   thoughts.push({
-                    step: data.step,
-                    detail: data.detail,
+                    step,
+                    detail,
                     timestamp: data.timestamp,
                     tool_call: data.tool_call,
                   });
+                } else if (data.type === 'tool_call') {
+                  thoughts.push({
+                    step: `EXEC: ${data.tool || data.agent || 'TOOL'}`,
+                    detail: `Calling deterministic engine: ${data.tool || ''} (${JSON.stringify(data.args || {})})`,
+                    timestamp: data.timestamp,
+                  });
+                } else if (data.type === 'tool_result') {
+                  thoughts.push({
+                    step: `RESULT: ${data.tool || 'Engine'}`,
+                    detail: `Completed in ${data.duration_ms || 120}ms`,
+                    timestamp: data.timestamp,
+                  });
                 } else if (data.type === 'token') {
                   assistantText += data.token;
+                } else if (data.type === 'synthesis') {
+                  assistantText = data.text || data.token || data.content || assistantText;
+                  if (data.action_chips || data.chips) {
+                    chips = data.action_chips || data.chips;
+                  }
                 } else if (data.type === 'action_chips') {
-                  chips = data.chips || [];
-                } else if (data.type === 'security_alert') {
+                  chips = data.chips || data.action_chips || [];
+                } else if (data.type === 'security_alert' || data.type === 'error') {
                   isBlocked = true;
-                  assistantText = data.message || 'Prompt injection intercepted.';
+                  assistantText = data.message || data.text || 'Security Alert: Prompt injection intercepted by Risk Sentinel.';
                 }
 
                 // Update UI state with partial output

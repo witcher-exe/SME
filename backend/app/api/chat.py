@@ -46,17 +46,22 @@ async def chat_sse(request: ChatRequest):
         yield format_sse({
             "type": "thought",
             "agent": "risk_sentinel",
+            "step": "Risk Sentinel",
             "text": "Scanning input for adversarial prompt injection and privilege escalation patterns...",
+            "detail": "Scanning input for adversarial prompt injection and privilege escalation patterns...",
             "timestamp": datetime.utcnow().isoformat()
         })
         await asyncio.sleep(0.15)
 
         is_safe, blocked_pattern = InjectionGuard.check_text(request.message)
         if not is_safe:
+            msg = f"Security policy violation: blocked pattern '{blocked_pattern}'. Prompt rejected by Risk Sentinel."
             yield format_sse({
-                "type": "error",
+                "type": "security_alert",
                 "code": "INJECTION_BLOCKED",
-                "message": f"Security policy violation: blocked pattern '{blocked_pattern}'. Prompt rejected by Risk Sentinel.",
+                "message": msg,
+                "text": msg,
+                "token": msg,
                 "timestamp": datetime.utcnow().isoformat()
             })
             yield format_sse({
@@ -72,7 +77,9 @@ async def chat_sse(request: ChatRequest):
             yield format_sse({
                 "type": "thought",
                 "agent": "risk_sentinel",
+                "step": "Risk Sentinel",
                 "text": f"Scrubbed {len(redacts)} sensitive PII entities before model egress.",
+                "detail": f"Scrubbed {len(redacts)} sensitive PII entities before model egress.",
                 "timestamp": datetime.utcnow().isoformat()
             })
             await asyncio.sleep(0.1)
@@ -81,7 +88,9 @@ async def chat_sse(request: ChatRequest):
         yield format_sse({
             "type": "thought",
             "agent": "orchestrator",
+            "step": "Orchestrator",
             "text": "Virtual CFO analyzing query semantics and routing to designated domain specialist...",
+            "detail": "Virtual CFO analyzing query semantics and routing to designated domain specialist...",
             "timestamp": datetime.utcnow().isoformat()
         })
         await asyncio.sleep(0.2)
@@ -90,10 +99,16 @@ async def chat_sse(request: ChatRequest):
         mock_resp = await GeminiService.generate_response(sanitized_msg, request.persona)
 
         for thought in mock_resp["thoughts"]:
+            agent_str = thought["agent"]
+            step_str = thought.get("step") or agent_str.replace("_", " ").title()
+            text_str = thought["text"]
+            detail_str = thought.get("detail") or text_str
             yield format_sse({
                 "type": "thought",
-                "agent": thought["agent"],
-                "text": thought["text"],
+                "agent": agent_str,
+                "step": step_str,
+                "text": text_str,
+                "detail": detail_str,
                 "timestamp": datetime.utcnow().isoformat()
             })
             await asyncio.sleep(0.2)
@@ -191,11 +206,15 @@ async def chat_sse(request: ChatRequest):
             await asyncio.sleep(0.2)
 
         # 5. Executive Synthesis
+        synth_text = mock_resp["synthesis"]
         yield format_sse({
             "type": "synthesis",
-            "text": mock_resp["synthesis"],
-            "citations": mock_resp["citations"],
-            "action_chips": mock_resp["action_chips"],
+            "text": synth_text,
+            "token": synth_text,
+            "content": synth_text,
+            "citations": mock_resp.get("citations", []),
+            "action_chips": mock_resp.get("action_chips", []),
+            "chips": mock_resp.get("action_chips", []),
             "timestamp": datetime.utcnow().isoformat()
         })
         await asyncio.sleep(0.1)
