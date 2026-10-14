@@ -18,13 +18,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 ENV PATH="/root/.local/bin:$PATH"
 
-# Copy pyproject.toml
-COPY backend/pyproject.toml ./
-
-RUN uv pip install --system .
-
-# Copy application code and seed data
+# Copy backend codebase (README.md, pyproject.toml, app, alembic, data)
 COPY backend/ ./
+
+# Install dependencies and auracfo-backend package
+RUN uv pip install --system -e .
 
 EXPOSE 8000
 
