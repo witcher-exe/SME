@@ -1,0 +1,3 @@
+import { createFileRoute } from '@tanstack/react-router';
+import { Financing } from '@/components/aura/financing';
+export const Route = createFileRoute('/financing')({head:()=>({meta:[{title:'AuraCFO · Financing Discovery'},{name:'description',content:'Find eligible funding and understand bank covenant requirements.'},{property:'og:title',content:'AuraCFO · Financing Discovery'},{property:'og:description',content:'Find eligible funding and understand bank covenant requirements.'},{property:'og:type',content:'website'},{name:'twitter:card',content:'summary_large_image'}]}),component:Financing});

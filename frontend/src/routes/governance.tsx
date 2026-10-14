@@ -1,0 +1,3 @@
+import { createFileRoute } from '@tanstack/react-router';
+import { Governance } from '@/components/aura/governance';
+export const Route = createFileRoute('/governance')({head:()=>({meta:[{title:'AuraCFO · Governance & Audit'},{name:'description',content:'Review owner approvals, verify audit integrity, and inspect privacy safeguards.'},{property:'og:title',content:'AuraCFO · Governance & Audit'},{property:'og:description',content:'Review owner approvals, verify audit integrity, and inspect privacy safeguards.'},{property:'og:type',content:'website'},{name:'twitter:card',content:'summary_large_image'}]}),component:Governance});

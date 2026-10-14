@@ -1,0 +1,3 @@
+import { createFileRoute } from '@tanstack/react-router';
+import { DataStudio } from '@/components/aura/data';
+export const Route = createFileRoute('/data')({head:()=>({meta:[{title:'AuraCFO · Data & Benchmarks'},{name:'description',content:'Load finance benchmarks and review your business records with privacy controls.'},{property:'og:title',content:'AuraCFO · Data & Benchmarks'},{property:'og:description',content:'Load finance benchmarks and review your business records with privacy controls.'},{property:'og:type',content:'website'},{name:'twitter:card',content:'summary_large_image'}]}),component:DataStudio});

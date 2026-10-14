@@ -67,6 +67,42 @@
       {"label": "Go to Governance Inbox", "action": "navigate:/governance"}
     ]
   },
+  "greeting": {
+    "thoughts": [
+      {"agent": "risk_sentinel", "text": "Pre-flight input analysis: Clean conversational greeting."},
+      {"agent": "orchestrator", "text": "Virtual CFO synthesizing live morning liquidity briefing for Bengal Craft & Retail."}
+    ],
+    "tool_calls": [
+      {"agent": "quant_modeler", "tool": "get_cash_position", "args": {}}
+    ],
+    "owner_synthesis": "Hello Maruf! I'm AuraCFO, your autonomous treasury copilot. I'm actively monitoring your accounts, 13-week cash runway, and working capital covenants for Bengal Craft & Retail Ltd. Today your cash position is 450,000 BDT with 34 days of runway remaining. You have an upcoming supplier settlement on Day 21 and 3 eligible financing schemes. What would you like to review?",
+    "cfo_synthesis": "Executive Briefing: Cash 450,000 BDT, Open AR 1,020,000 BDT, DSCR 1.18x, Quick Ratio 1.55x. P10 liquidity corridor projects safety floor breach at t=21 days. All systems nominal.",
+    "citations": ["dashboard_service", "covenant_engine"],
+    "action_chips": [
+      {"label": "Forecast Cash Flow", "action": "navigate:/forecast"},
+      {"label": "Explore Financing", "action": "navigate:/financing"},
+      {"label": "Review Invoices", "action": "navigate:/operations"}
+    ]
+  },
+  "investment_capital": {
+    "thoughts": [
+      {"agent": "risk_sentinel", "text": "Input validated. Capital allocation & investment advisory query detected."},
+      {"agent": "orchestrator", "text": "Routing query to Quant Modeler & Treasurer for capital structure advisory."},
+      {"agent": "treasurer", "text": "Evaluating liquidity buffer, receivables borrowing capacity, and debt covenant impact for capital outlay."}
+    ],
+    "tool_calls": [
+      {"agent": "treasurer", "tool": "evaluate_capital_expenditure", "args": {"target_amount": 1000000}},
+      {"agent": "quant_modeler", "tool": "simulate_capex_stress", "args": {"capex_amount": 1000000}}
+    ],
+    "owner_synthesis": "To fund a 1M BDT capital investment without endangering your business:\n\n1. **Do NOT drain liquid cash:** You currently hold 450,000 BDT. Spending this directly would immediately wipe out your operating runway and cause an insolvency crisis by Day 21 when supplier bills arrive.\n2. **Unlock 816,000 BDT via Invoice Factoring:** You have 1,020,000 BDT in unpaid customer invoices. Drawing an 80% factoring advance unlocks ~816,000 BDT in non-debt working capital in under 48 hours.\n3. **Bridge the remaining gap with Term Financing:** For the remaining ~184,000 BDT, you can tap an SME Growth Facility once your DSCR is lifted to the 1.25x threshold.\n\nRecommendation: Test this capital outlay in Forecast Studio before committing, or view your eligible factoring schemes.",
+    "cfo_synthesis": "Capital Structure Advisory for 1,000,000 BDT CapEx: Current cash balance of 450,000 BDT is insufficient and commits the entity to immediate technical insolvency under the Day 21 supplier settlement (-42,300 BDT deficit). Optimal funding mix: (1) Factoring advance on 1,020,000 BDT AR ledger at 80% LTV yielding 816,000 BDT liquid, (2) Subordinated revolving credit facility for 184,000 BDT contingent on DSCR covenant normalization.",
+    "citations": ["matching_engine", "forecast_engine", "covenant_engine"],
+    "action_chips": [
+      {"label": "Simulate in Forecast", "action": "navigate:/forecast"},
+      {"label": "View Factoring Options", "action": "navigate:/financing"},
+      {"label": "Accelerate Overdue AR", "action": "navigate:/operations"}
+    ]
+  },
   "general": {
     "thoughts": [
       {"agent": "risk_sentinel", "text": "Pre-flight input analysis: No malicious tokens found."},

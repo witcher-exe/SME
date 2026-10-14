@@ -1,0 +1,3 @@
+import { createFileRoute } from '@tanstack/react-router';
+import { Forecast } from '@/components/aura/forecast';
+export const Route = createFileRoute('/forecast')({head:()=>({meta:[{title:'AuraCFO · Forecast Studio'},{name:'description',content:'Explore 13-week cash forecasts and stress-test your business assumptions.'},{property:'og:title',content:'AuraCFO · Forecast Studio'},{property:'og:description',content:'Explore 13-week cash forecasts and stress-test your business assumptions.'},{property:'og:type',content:'website'},{name:'twitter:card',content:'summary_large_image'}]}),component:Forecast});

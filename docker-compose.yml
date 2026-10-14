@@ -6,15 +6,16 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - MOCK_LLM=true
+      - MOCK_LLM=false
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - LLM_MODEL=gemini-3.1-flash-lite
       - DATABASE_URL=sqlite+aiosqlite:///./auracfo.db
       - HMAC_SECRET_KEY=auracfo-super-secret-hmac-salt-key-2026
       - HOST=0.0.0.0
       - PORT=8000
-      - CORS_ORIGINS=http://localhost:3000,http://localhost:5173
+      - CORS_ORIGINS=http://localhost:3000,http://localhost:5173,http://127.0.0.1:3000,http://127.0.0.1:5173
     volumes:
       - ./backend/data:/app/data
-      - backend-db:/app
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000/api/dashboard/health"]
       interval: 10s
@@ -28,9 +29,8 @@ services:
       dockerfile: Dockerfile.frontend
     ports:
       - "3000:3000"
+    environment:
+      - VITE_BACKEND_URL=http://backend:8000
     depends_on:
       - backend
     restart: unless-stopped
-
-volumes:
-  backend-db:

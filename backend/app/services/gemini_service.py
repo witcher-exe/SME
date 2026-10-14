@@ -68,8 +68,18 @@ class GeminiService:
 
         full_prompt = f"{system_prompt}\n\nUser Question: {message}\n\nAuraCFO Executive Response:"
 
-        model_name = settings.LLM_MODEL or "gemini-3.1-flash-lite"
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent?key={api_key}"
+        # Model priority cascade: Primary -> Secondary -> Emergency
+        models_cascade = [
+            settings.LLM_MODEL or "gemini-3.1-flash-lite",
+            "gemini-3.5-flash-lite",
+            "gemini-2.5-flash-lite",
+            "gemini-flash-lite-latest"
+        ]
+        # Deduplicate while preserving strict priority order
+        models_to_try = []
+        for m in models_cascade:
+            if m not in models_to_try:
+                models_to_try.append(m)
 
         payload = {
             "contents": [
@@ -83,33 +93,65 @@ class GeminiService:
             }
         }
 
-        try:
-            async with httpx.AsyncClient(timeout=12.0) as client:
-                resp = await client.post(url, json=payload)
-                if resp.status_code == 200:
-                    data = resp.json()
-                    candidates = data.get("candidates", [])
-                    if candidates and "content" in candidates[0]:
-                        parts = candidates[0]["content"].get("parts", [])
-                        if parts and "text" in parts[0]:
-                            synthesis_text = parts[0]["text"]
-                            logger.info(f"Successfully generated response with Gemini ({model_name}).")
-                            
-                            # Standard thought trace and action chips for the copilot stream
-                            mock_template = MockLLM.get_response(message, persona)
-                            return {
-                                "thoughts": [
-                                    {"agent": "quant_modeler", "text": "Monte Carlo engine verified 13-week runway: Day 21 shortfall on 2026-11-04."},
-                                    {"agent": "treasurer", "text": f"Consulting Gemini ({model_name}) with verified covenant ratios: DSCR 1.18x, Quick Ratio 3.94x."},
-                                    {"agent": "risk_sentinel", "text": "Output validated against deterministic engine constraints."}
-                                ],
-                                "tool_calls": mock_template.get("tool_calls", []),
-                                "synthesis": synthesis_text,
-                                "citations": mock_template.get("citations", []),
-                                "action_chips": mock_template.get("action_chips", [])
-                            }
-                logger.warning(f"Gemini API returned status {resp.status_code}: {resp.text[:200]}. Falling back to MockLLM.")
-        except Exception as e:
-            logger.warning(f"Gemini live call failed ({e}). Seamlessly falling back to MockLLM.")
+        async with httpx.AsyncClient(timeout=10.0) as client:
+            for idx, model_name in enumerate(models_to_try):
+                url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent?key={api_key}"
+                try:
+                    logger.info(f"Attempting model [{idx + 1}/{len(models_to_try)}]: {model_name}...")
+                    resp = await client.post(url, json=payload)
+                    
+                    if resp.status_code == 200:
+                        data = resp.json()
+                        candidates = data.get("candidates", [])
+                        if candidates and "content" in candidates[0]:
+                            parts = candidates[0]["content"].get("parts", [])
+                            if parts and "text" in parts[0]:
+                                synthesis_text = parts[0]["text"]
+                                logger.info(f"Successfully generated response with Gemini ({model_name}).")
+                                
+                                mock_template = MockLLM.get_response(message, persona)
+                                return {
+                                    "thoughts": [
+                                        {"agent": "quant_modeler", "text": "Monte Carlo engine verified 13-week runway: Day 21 shortfall on 2026-11-04."},
+                                        {"agent": "treasurer", "text": f"Consulting live Gemini model ({model_name}) with verified covenant ratios: DSCR 1.18x, Quick Ratio 3.94x."},
+                                        {"agent": "risk_sentinel", "text": "Output validated against deterministic engine constraints."}
+                                    ],
+                                    "tool_calls": mock_template.get("tool_calls", []),
+                                    "synthesis": synthesis_text,
+                                    "citations": mock_template.get("citations", []),
+                                    "action_chips": mock_template.get("action_chips", [])
+                                }
 
+                    # Check why it failed
+                    status_code = resp.status_code
+                    body_text = resp.text.lower()
+
+                    # Check for explicit DAILY quota exhaustion (do not cycle models if daily account limit reached)
+                    if status_code == 429 and ("per day" in body_text or "daily" in body_text):
+                        logger.warning(f"Daily API quota limit reached on {model_name}. Stopping model cascade to preserve quota.")
+                        break
+
+                    # Server busy / high demand / timeout / service unavailable -> Fall back to next model
+                    if status_code in [500, 502, 503, 504] or "high demand" in body_text or "capacity" in body_text:
+                        logger.warning(
+                            f"Model {model_name} is currently busy on Google server (status {status_code}). "
+                            f"Falling back to next priority model..."
+                        )
+                        continue
+                    elif status_code == 404:
+                        # Model unavailable in this region/tier, continue to emergency model
+                        logger.info(f"Model {model_name} unavailable (404). Trying next fallback...")
+                        continue
+                    else:
+                        logger.warning(f"Model {model_name} returned unexpected status {status_code}. Checking next fallback...")
+                        continue
+
+                except (httpx.TimeoutException, httpx.NetworkError) as e:
+                    logger.warning(f"Model {model_name} connection/timeout ({e}). Server may be overloaded. Falling back to next model...")
+                    continue
+                except Exception as e:
+                    logger.warning(f"Unexpected error calling {model_name}: {e}. Checking next fallback...")
+                    continue
+
+        logger.warning("All live Gemini models busy or unreachable. Seamlessly activating MockLLM.")
         return MockLLM.get_response(message, persona)

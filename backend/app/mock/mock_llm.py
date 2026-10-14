@@ -23,14 +23,18 @@ class MockLLM:
     @classmethod
     def match_intent(cls, message: str) -> str:
         msg = message.lower()
-        if any(w in msg for w in ["runway", "shortfall", "forecast", "cash flow", "burn"]):
-            return "runway_shortfall"
-        elif any(w in msg for w in ["what if", "scenario", "delay", "late", "acme", "shock"]):
-            return "scenario_delay"
-        elif any(w in msg for w in ["scheme", "loan", "financ", "eligible", "why not", "borrow", "fund"]):
+        if any(w in msg for w in ["yo", "hi", "hello", "whassup", "hey", "sup", "good morning", "good evening", "howdy"]):
+            return "greeting"
+        elif any(w in msg for w in ["invest", "expansion", "expand", "capex", "growth", "need cash", "need money", "1m", "capital", "acquire", "purchase"]):
+            return "investment_capital"
+        elif any(w in msg for w in ["scheme", "loan", "financ", "eligible", "why not", "borrow", "fund", "credit", "lending"]):
             return "financing_match"
-        elif any(w in msg for w in ["draft", "remind", "collect", "email", "letter", "notice"]):
+        elif any(w in msg for w in ["what if", "scenario", "delay", "late", "acme", "shock", "stress", "simulate"]):
+            return "scenario_delay"
+        elif any(w in msg for w in ["draft", "remind", "collect", "email", "letter", "notice", "overdue", "invoice"]):
             return "draft_collection"
+        elif any(w in msg for w in ["runway", "shortfall", "forecast", "cash flow", "burn", "balance", "deficit", "liquidity", "cash"]):
+            return "runway_shortfall"
         return "general"
 
     @classmethod

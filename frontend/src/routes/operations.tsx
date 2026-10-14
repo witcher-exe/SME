@@ -1,0 +1,3 @@
+import { createFileRoute } from '@tanstack/react-router';
+import { Operations } from '@/components/aura/operations';
+export const Route = createFileRoute('/operations')({head:()=>({meta:[{title:'AuraCFO · Operations & Invoices'},{name:'description',content:'Manage receivables and prepare collection reminders for owner approval.'},{property:'og:title',content:'AuraCFO · Operations & Invoices'},{property:'og:description',content:'Manage receivables and prepare collection reminders for owner approval.'},{property:'og:type',content:'website'},{name:'twitter:card',content:'summary_large_image'}]}),component:Operations});

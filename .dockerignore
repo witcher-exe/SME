@@ -1,0 +1,38 @@
+# Git & IDE
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# Python & Virtual Environments
+**/.venv/
+**/venv/
+**/__pycache__/
+**/*.pyc
+**/.pytest_cache/
+**/*.egg-info/
+
+# Node & Package Managers
+**/node_modules/
+**/.output/
+**/dist/
+**/.tanstack/
+**/.wrangler/
+**/.lovable/
+**/*.tsbuildinfo
+**/.eslintcache
+
+# Local Databases, Logs & Archives
+*.db
+*.sqlite3
+auracfo.db
+logs/*.log
+logs/*.jsonl
+*.zip
+*.tar.gz
+
+# Environment Secrets
+.env.local
+
+# Legacy Folders
+LegacyFrontend/

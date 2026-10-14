@@ -29,6 +29,12 @@ node_modules/
 .pnp.js
 frontend/dist/
 frontend/build/
+frontend/.output/
+frontend/.wrangler/
+frontend/.nitro/
+frontend/.vinxi/
+frontend/.tanstack/
+LegacyFrontend/
 .eslintcache
 *.tsbuildinfo
 
