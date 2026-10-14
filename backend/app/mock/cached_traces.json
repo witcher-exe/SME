@@ -1,0 +1,87 @@
+{
+  "runway_shortfall": {
+    "thoughts": [
+      {"agent": "risk_sentinel", "text": "Pre-flight validation: Verifying prompt integrity. Zero injection patterns detected. PII scan passed."},
+      {"agent": "orchestrator", "text": "Intent classified: LIQUIDITY_FORECAST. Routing query to Quant Modeler specialist."},
+      {"agent": "quant_modeler", "text": "Executing deterministic 13-week Monte Carlo forecast (1000 paths) on company ledger."}
+    ],
+    "tool_calls": [
+      {"agent": "quant_modeler", "tool": "forecast_cash", "args": {"horizon_days": 90, "mc_runs": 1000}}
+    ],
+    "owner_synthesis": "You currently have 34 days of cash runway with 450,000 BDT in liquid cash. Under our conservative 13-week forecast, your safety buffer breaches on November 4, 2026 (Day 21) with an estimated shortfall deficit of 8,420 BDT. Key drivers include upcoming supplier payments and delayed receivables. I recommend reviewing your eligible financing options or issuing payment reminders to safeguard cash reserves.",
+    "cfo_synthesis": "Under a 13-week Monte Carlo simulation (1,000 iterations), your P10 liquidity corridor breaches the 10,000 BDT safety reserve at t=21 days (November 4, 2026), generating an 8,420 BDT deficit. Current DSCR stands at 1.18x, while quick ratio is 1.55x. Recommended liquidity interventions: (1) Advance 80% on eligible receivables via factoring, (2) Accelerate collection on high-hazard AR buckets.",
+    "citations": ["forecast_engine", "covenant_engine"],
+    "action_chips": [
+      {"label": "View Forecast Detail", "action": "navigate:/forecast"},
+      {"label": "Explore Financing Options", "action": "navigate:/financing"},
+      {"label": "Review Invoices", "action": "navigate:/operations"}
+    ]
+  },
+  "scenario_delay": {
+    "thoughts": [
+      {"agent": "risk_sentinel", "text": "Input sanitized. No security hazards detected."},
+      {"agent": "orchestrator", "text": "Intent classified: WHAT_IF_SCENARIO. Delegating stress simulation to Quant Modeler."},
+      {"agent": "quant_modeler", "text": "Simulating 30-day debtor delay stress test against baseline forecast."}
+    ],
+    "tool_calls": [
+      {"agent": "quant_modeler", "tool": "simulate_scenario", "args": {"debtor_delay_days": 30, "apply_factoring_advance": false}}
+    ],
+    "owner_synthesis": "If Acme Corp delays payment by 30 days, your cash shortfall accelerates by 14 days — November 4th becomes October 21st (Day 20), and your projected deficit deepens to 12,400 BDT. I recommend: (1) Drawing a 10,000 BDT factoring advance, which pushes the shortfall out to Day 28, and (2) Issuing a firm collection reminder immediately.",
+    "cfo_synthesis": "Under a 30-day AR extension scenario, P50 shortfall date shifts from t=34 to t=20. Projected deficit increases to 12,400 BDT (P10). DSCR drops from 1.18x to 0.94x. Recommended capital mitigation: Draw invoice factoring advance (cost basis: 2.5% fee on eligible volume) or execute formal demand notice.",
+    "citations": ["scenario_engine", "forecast_engine"],
+    "action_chips": [
+      {"label": "Apply Factoring Shock", "action": "scenario:factoring"},
+      {"label": "Draft Collection Notice", "action": "navigate:/operations"}
+    ]
+  },
+  "financing_match": {
+    "thoughts": [
+      {"agent": "risk_sentinel", "text": "Security check complete. No prompt injection or PII leakage."},
+      {"agent": "orchestrator", "text": "Intent classified: FINANCING_DISCOVERY. Routing to Treasurer specialist."},
+      {"agent": "treasurer", "text": "Evaluating company balance sheet and debt covenants against 5 official refinance schemes."}
+    ],
+    "tool_calls": [
+      {"agent": "treasurer", "tool": "match_financing", "args": {"include_why_not": true}}
+    ],
+    "owner_synthesis": "You are currently eligible for 2 financing options: (1) Invoice Factoring Advance Facility (2.5% discount fee) and (2) Digital Nano Credit (12.0% APR). You are currently not eligible for the CMSME Working Capital Refinance Fund because your DSCR is 1.18x, just 0.07x below Bangladesh Bank's 1.25x minimum requirement. We can prepare your factoring application immediately.",
+    "cfo_synthesis": "Covenant audit indicates DSCR of 1.18x vs 1.25x minimum statutory threshold for Bangladesh Bank CMSME Refinance Fund, resulting in an ineligibility gap of 0.07x. Current viable working capital structures: (1) Prime Bank Invoice Factoring (2.5% flat margin, 3-month revolving), (2) Digital Nano Credit (12.0% effective APR).",
+    "citations": ["matching_engine", "covenant_engine", "scheme_catalog"],
+    "action_chips": [
+      {"label": "View Scheme Details", "action": "navigate:/financing"},
+      {"label": "Prepare Factoring Pack", "action": "chat:prepare_factoring"}
+    ]
+  },
+  "draft_collection": {
+    "thoughts": [
+      {"agent": "risk_sentinel", "text": "Pre-flight security check passed."},
+      {"agent": "orchestrator", "text": "Intent classified: DRAFT_COLLECTION. Routing to Treasurer specialist."},
+      {"agent": "treasurer", "text": "Generating standard firm collection notice under Tier 2 (Draft) governance rules."}
+    ],
+    "tool_calls": [
+      {"agent": "treasurer", "tool": "draft_collection_notice", "args": {"tone": "standard_firm"}}
+    ],
+    "owner_synthesis": "I have drafted a firm payment reminder for your overdue customer. Under AuraCFO's governance rules, this draft is staged in Tier 2 and will NOT be emailed until you review and approve it in your Governance Inbox.",
+    "cfo_synthesis": "Collection draft formulated under Tier 2 protocol (non-dispatching). Action queued for Human-in-the-Loop authorization. No outbound communication will occur without owner cryptographic sign-off.",
+    "citations": ["operations_engine", "permission_service"],
+    "action_chips": [
+      {"label": "Go to Governance Inbox", "action": "navigate:/governance"}
+    ]
+  },
+  "general": {
+    "thoughts": [
+      {"agent": "risk_sentinel", "text": "Pre-flight input analysis: No malicious tokens found."},
+      {"agent": "orchestrator", "text": "Virtual CFO synthesizing financial telemetry for Bengal Craft & Retail."}
+    ],
+    "tool_calls": [
+      {"agent": "quant_modeler", "tool": "get_cash_position", "args": {}}
+    ],
+    "owner_synthesis": "Bengal Craft & Retail is currently operating with 450,000 BDT in liquid cash and 1,020,000 BDT in open customer invoices. You have 34 days of runway remaining. You can ask me to forecast cash flow, test delay scenarios, find low-interest loans, or draft customer collection letters.",
+    "cfo_synthesis": "Company status: Liquid Cash 450,000 BDT, Open Receivables 1,020,000 BDT, Current DSCR 1.18x, Quick Ratio 1.55x, CCC 38.0 days. Projected runway is 34 days before reaching the 10,000 BDT liquidity floor. Recommend proactive working capital management.",
+    "citations": ["dashboard_service", "covenant_engine"],
+    "action_chips": [
+      {"label": "Forecast Cash Flow", "action": "chat:forecast"},
+      {"label": "Stress Test Delays", "action": "chat:scenario"},
+      {"label": "Check Loan Eligibility", "action": "chat:financing"}
+    ]
+  }
+}

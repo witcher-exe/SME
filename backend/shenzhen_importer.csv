@@ -1,0 +1,61 @@
+id,date,amount,direction,category,counterparty,raw_narration,pii_scrubbed
+SZ-TXN-001,2026-05-01,281440.96,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-0,false
+SZ-TXN-002,2026-05-03,74980.09,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-003,2026-05-06,90625.44,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-2,false
+SZ-TXN-004,2026-05-09,181978.54,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-005,2026-05-11,94263.09,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-4,false
+SZ-TXN-006,2026-05-14,108335.94,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-007,2026-05-17,94840.17,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-6,false
+SZ-TXN-008,2026-05-19,205652.59,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-009,2026-05-22,245596.62,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-8,false
+SZ-TXN-010,2026-05-25,108225.5,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-011,2026-05-28,217476.78,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-10,false
+SZ-TXN-012,2026-05-30,169660.93,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-013,2026-06-02,112041.81,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-12,false
+SZ-TXN-014,2026-06-05,60247.59,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-015,2026-06-07,225319.55,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-14,false
+SZ-TXN-016,2026-06-10,102682.93,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-017,2026-06-13,59681.15,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-16,false
+SZ-TXN-018,2026-06-15,119431.1,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-019,2026-06-18,99893.21,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-18,false
+SZ-TXN-020,2026-06-21,204505.86,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-021,2026-06-24,137414.61,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-20,false
+SZ-TXN-022,2026-06-26,185901.91,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-023,2026-06-29,267830.76,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-22,false
+SZ-TXN-024,2026-07-02,72355.47,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-025,2026-07-04,215008.3,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-24,false
+SZ-TXN-026,2026-07-07,105708.54,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-027,2026-07-10,119650.77,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-26,false
+SZ-TXN-028,2026-07-12,43189.94,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-029,2026-07-15,243331.66,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-28,false
+SZ-TXN-030,2026-07-18,96717.76,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-031,2026-07-21,177351.42,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-30,false
+SZ-TXN-032,2026-07-23,159108.44,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-033,2026-07-26,260915.29,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-32,false
+SZ-TXN-034,2026-07-29,92918.47,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-035,2026-07-31,56900.13,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-34,false
+SZ-TXN-036,2026-08-03,196637.3,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-037,2026-08-06,115303.8,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-36,false
+SZ-TXN-038,2026-08-08,140312.05,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-039,2026-08-11,295887.64,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-38,false
+SZ-TXN-040,2026-08-14,37268.87,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-041,2026-08-17,199142.81,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-40,false
+SZ-TXN-042,2026-08-19,95680.55,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-043,2026-08-22,246607.04,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-42,false
+SZ-TXN-044,2026-08-25,112914.84,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-045,2026-08-27,296058.96,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-44,false
+SZ-TXN-046,2026-08-30,51972.7,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-047,2026-09-02,274876.18,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-46,false
+SZ-TXN-048,2026-09-04,66114.97,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-049,2026-09-07,61096.63,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-48,false
+SZ-TXN-050,2026-09-10,112850.93,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-051,2026-09-13,179980.09,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-50,false
+SZ-TXN-052,2026-09-15,183237.07,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-053,2026-09-18,221714.29,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-52,false
+SZ-TXN-054,2026-09-21,208649.99,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-055,2026-09-23,234259.42,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-54,false
+SZ-TXN-056,2026-09-26,67436.67,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-057,2026-09-29,157824.35,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-56,false
+SZ-TXN-058,2026-10-01,210286.15,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false
+SZ-TXN-059,2026-10-04,280192.71,credit,revenue,Shenzhen Consumer Electronics Co Ltd,Export sales remittance from Shenzhen Consumer Electronics Co Ltd LC #SZ-2026-58,false
+SZ-TXN-060,2026-10-07,148399.53,debit,cogs,Guangzhou Chip Components Corp,Supplier wire transfer to Guangzhou Chip Components Corp for component inventory,false

@@ -1,0 +1,27 @@
+{
+  "id": "invoice_factoring_advance_2026",
+  "name": "Invoice Factoring Advance Facility",
+  "issuer": "Commercial Banking Partner / Prime Bank",
+  "effective_date": "2026-01-01",
+  "expiry_date": null,
+  "source_url": "https://primebank.com.bd/sme-banking/factoring",
+  "retrieval_date": "2026-10-14",
+  "rate_cap_pct": 2.5,
+  "max_amount_bdt": 15000000.0,
+  "tenure_months": 3,
+  "eligibility_rules": {
+    "cib_clearance": true,
+    "min_dscr": 1.0,
+    "min_turnover_bdt": 200000.0,
+    "min_operating_months": 6,
+    "max_leverage": 5.0,
+    "ownership_requirement": null,
+    "required_documents": [
+      "Accepted Purchase Orders / Invoices",
+      "Delivery Challan / Goods Acceptance Note",
+      "Counterparty Verification Statement",
+      "Trade License"
+    ]
+  },
+  "status": "confirmed"
+}

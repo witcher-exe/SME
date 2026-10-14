@@ -1,0 +1,27 @@
+{
+  "id": "women_entrepreneur_refinance_2026",
+  "name": "Women Entrepreneur Refinance Facility",
+  "issuer": "Bangladesh Bank",
+  "effective_date": "2025-08-15",
+  "expiry_date": null,
+  "source_url": "https://www.bb.org.bd/en/index.php/financialactivity/refinance",
+  "retrieval_date": "2026-10-14",
+  "rate_cap_pct": 5.0,
+  "max_amount_bdt": 25000000.0,
+  "tenure_months": 36,
+  "eligibility_rules": {
+    "cib_clearance": true,
+    "min_dscr": 1.10,
+    "min_turnover_bdt": 300000.0,
+    "min_operating_months": 6,
+    "max_leverage": 4.0,
+    "ownership_requirement": ">=51% women-owned equity",
+    "required_documents": [
+      "Trade License",
+      "National ID of Woman Entrepreneur",
+      "Bank Statement (6 months)",
+      "Partnership Deed / Memorandum showing 51% ownership"
+    ]
+  },
+  "status": "[verify] Bangladesh Bank SMESPD Circular No. 02/2025"
+}

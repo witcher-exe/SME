@@ -1,0 +1,26 @@
+{
+  "id": "digital_nano_credit_2026",
+  "name": "Digital Nano Credit Scheme",
+  "issuer": "MFS Provider / City Bank Digital",
+  "effective_date": "2025-06-01",
+  "expiry_date": null,
+  "source_url": "https://www.thecitybank.com/sme/nano-credit",
+  "retrieval_date": "2026-10-14",
+  "rate_cap_pct": 12.0,
+  "max_amount_bdt": 500000.0,
+  "tenure_months": 6,
+  "eligibility_rules": {
+    "cib_clearance": true,
+    "min_dscr": 0.90,
+    "min_turnover_bdt": 100000.0,
+    "min_operating_months": 3,
+    "max_leverage": 6.0,
+    "ownership_requirement": null,
+    "required_documents": [
+      "National ID (NID)",
+      "Registered Merchant Mobile Account",
+      "e-TIN"
+    ]
+  },
+  "status": "confirmed"
+}

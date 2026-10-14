@@ -1,0 +1,27 @@
+{
+  "id": "cmsme_working_capital_2026",
+  "name": "CMSME Working Capital Refinance Fund",
+  "issuer": "Bangladesh Bank",
+  "effective_date": "2026-06-08",
+  "expiry_date": null,
+  "source_url": "https://www.bssnews.net/business/393608",
+  "retrieval_date": "2026-10-14",
+  "rate_cap_pct": 9.0,
+  "max_amount_bdt": 50000000.0,
+  "tenure_months": 12,
+  "eligibility_rules": {
+    "cib_clearance": true,
+    "min_dscr": 1.25,
+    "min_turnover_bdt": 500000.0,
+    "min_operating_months": 12,
+    "max_leverage": 3.0,
+    "ownership_requirement": null,
+    "required_documents": [
+      "Trade License",
+      "12-Month Bank Statement",
+      "Tax Certificate (TIN)",
+      "CIB Report"
+    ]
+  },
+  "status": "[verify] Terms from news summaries, not primary circular"
+}

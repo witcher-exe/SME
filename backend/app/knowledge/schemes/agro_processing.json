@@ -1,0 +1,27 @@
+{
+  "id": "agro_processing_credit_2026",
+  "name": "Agro-Processing Credit Facility",
+  "issuer": "Bank and Financial Institutions Division (BFID) / JICA",
+  "effective_date": "2024-01-10",
+  "expiry_date": null,
+  "source_url": "https://fid.gov.bd/site/page/refinance-schemes",
+  "retrieval_date": "2026-10-14",
+  "rate_cap_pct": 7.0,
+  "max_amount_bdt": 40000000.0,
+  "tenure_months": 60,
+  "eligibility_rules": {
+    "cib_clearance": true,
+    "min_dscr": 1.20,
+    "min_turnover_bdt": 1000000.0,
+    "min_operating_months": 24,
+    "max_leverage": 2.5,
+    "ownership_requirement": null,
+    "required_documents": [
+      "Agro-processing Factory/Warehouse License",
+      "Environmental Clearance Certificate",
+      "BSTI Certification",
+      "Audited Financials (2 Years)"
+    ]
+  },
+  "status": "[verify] Terms from news summaries, not primary circular"
+}

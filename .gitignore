@@ -1,0 +1,47 @@
+# Environments
+.env
+.env.local
+.venv
+env/
+venv/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# SQLite & DB
+*.sqlite3
+*.db
+auracfo.db
+
+# Node / Frontend
+node_modules/
+.pnp
+.pnp.js
+frontend/dist/
+frontend/build/
+.eslintcache
+*.tsbuildinfo
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/*.log
+!logs/sandbox_execution_evidence.jsonl

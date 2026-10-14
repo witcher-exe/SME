@@ -1,0 +1,129 @@
+id,date,amount,direction,category,counterparty,raw_narration,pii_scrubbed
+TXN-2026-0001,2026-04-01,55750.32,credit,revenue,Apex Retailers Ltd,Customer payment received from Apex Retailers Ltd Phone: 01819223344 Ref: TIN-7712-3319,false
+TXN-2026-0002,2026-04-02,56124.0,debit,rent,Dhanmondi Retail Outlet Rent,Bank transfer debit to Dhanmondi Retail Outlet Rent on account of rent voucher #1001,false
+TXN-2026-0003,2026-04-04,59186.14,credit,revenue,Bengal Heritage Gift Shop,Customer payment received from Bengal Heritage Gift Shop Phone: 01715443322 Ref: TIN-4422-1109,false
+TXN-2026-0004,2026-04-05,59570.46,debit,supplier_raw_materials,Chittagong Jute & Crafts Works,Bank transfer debit to Chittagong Jute & Crafts Works on account of supplier_raw_materials voucher #1003,false
+TXN-2026-0005,2026-04-07,72714.78,credit,revenue,Apex Retailers Ltd,Customer payment received from Apex Retailers Ltd Phone: 01819223344 Ref: TIN-7712-3319,false
+TXN-2026-0006,2026-04-08,38391.53,debit,supplier_raw_materials,Dhaka Textiles & Weaving Mill,Bank transfer debit to Dhaka Textiles & Weaving Mill on account of supplier_raw_materials voucher #1005,false
+TXN-2026-0007,2026-04-10,56124.0,debit,rent,Gulshan Showroom Commercial Lease,Bank transfer debit to Gulshan Showroom Commercial Lease on account of rent voucher #1006,false
+TXN-2026-0008,2026-04-11,71837.35,credit,revenue,Acme Corp Bangladesh,Customer payment received from Acme Corp Bangladesh Phone: 01711002233 Ref: TIN-9821-4412,false
+TXN-2026-0009,2026-04-13,45000.0,debit,loan_emi,Standard Chartered Bank Loan EMI,Bank transfer debit to Standard Chartered Bank Loan EMI on account of loan_emi voucher #1008,false
+TXN-2026-0010,2026-04-14,61613.22,credit,revenue,POS Merchant Settlement CityBank,Customer payment received from POS Merchant Settlement CityBank Phone: 01311223344 Ref: TIN-1122-3344,false
+TXN-2026-0011,2026-04-16,46523.68,debit,supplies,Paper & Packaging Supplies BD,Bank transfer debit to Paper & Packaging Supplies BD on account of supplies voucher #1010,false
+TXN-2026-0012,2026-04-17,77764.22,credit,revenue,Acme Corp Bangladesh,Customer payment received from Acme Corp Bangladesh Phone: 01711002233 Ref: TIN-9821-4412,false
+TXN-2026-0013,2026-04-19,60272.39,debit,supplier_raw_materials,Sonargaon Brass & Metal Artisans,Bank transfer debit to Sonargaon Brass & Metal Artisans on account of supplier_raw_materials voucher #1012,false
+TXN-2026-0014,2026-04-20,102894.0,debit,payroll,Staff Monthly Payroll & Wages,Bank transfer debit to Staff Monthly Payroll & Wages on account of payroll voucher #1013,false
+TXN-2026-0015,2026-04-22,61459.41,credit,revenue,Dhaka Handloom Emporium,Customer payment received from Dhaka Handloom Emporium Phone: 01912334455 Ref: TIN-5511-9920,false
+TXN-2026-0016,2026-04-23,88863.0,debit,payroll,Staff Monthly Payroll & Wages,Bank transfer debit to Staff Monthly Payroll & Wages on account of payroll voucher #1015,false
+TXN-2026-0017,2026-04-25,66397.82,credit,revenue,Apex Retailers Ltd,Customer payment received from Apex Retailers Ltd Phone: 01819223344 Ref: TIN-7712-3319,false
+TXN-2026-0018,2026-04-26,102894.0,debit,payroll,Staff Monthly Payroll & Wages,Bank transfer debit to Staff Monthly Payroll & Wages on account of payroll voucher #1017,false
+TXN-2026-0019,2026-04-28,79213.85,credit,revenue,Padma Crafts Ltd,Customer payment received from Padma Crafts Ltd Phone: 01611889900 Ref: TIN-3321-7788,false
+TXN-2026-0020,2026-04-29,15373.06,debit,utilities,Titas Gas Transmission Co,Bank transfer debit to Titas Gas Transmission Co on account of utilities voucher #1019,false
+TXN-2026-0021,2026-05-01,10238.51,debit,utilities,DESCO Commercial Electricity,Bank transfer debit to DESCO Commercial Electricity on account of utilities voucher #1020,false
+TXN-2026-0022,2026-05-02,79882.14,credit,revenue,Padma Crafts Ltd,Customer payment received from Padma Crafts Ltd Phone: 01611889900 Ref: TIN-3321-7788,false
+TXN-2026-0023,2026-05-04,66404.8,debit,supplies,Paper & Packaging Supplies BD,Bank transfer debit to Paper & Packaging Supplies BD on account of supplies voucher #1022,false
+TXN-2026-0024,2026-05-05,72320.56,credit,revenue,Sylhet Tea & Souvenirs,Customer payment received from Sylhet Tea & Souvenirs Phone: 01719998877 Ref: TIN-6655-2233,false
+TXN-2026-0025,2026-05-07,38916.24,debit,supplier_raw_materials,Chittagong Jute & Crafts Works,Bank transfer debit to Chittagong Jute & Crafts Works on account of supplier_raw_materials voucher #1024,false
+TXN-2026-0026,2026-05-08,78192.05,credit,revenue,Bengal Heritage Gift Shop,Customer payment received from Bengal Heritage Gift Shop Phone: 01715443322 Ref: TIN-4422-1109,false
+TXN-2026-0027,2026-05-10,65418.25,debit,supplier_raw_materials,Chittagong Jute & Crafts Works,Bank transfer debit to Chittagong Jute & Crafts Works on account of supplier_raw_materials voucher #1026,false
+TXN-2026-0028,2026-05-11,49860.95,debit,supplier_raw_materials,Chittagong Jute & Crafts Works,Bank transfer debit to Chittagong Jute & Crafts Works on account of supplier_raw_materials voucher #1027,false
+TXN-2026-0029,2026-05-13,74070.53,credit,revenue,Biman Bangladesh Duty Free,Customer payment received from Biman Bangladesh Duty Free Phone: 01811556677 Ref: TIN-9988-7766,false
+TXN-2026-0030,2026-05-14,88863.0,debit,payroll,Staff Monthly Payroll & Wages,Bank transfer debit to Staff Monthly Payroll & Wages on account of payroll voucher #1029,false
+TXN-2026-0031,2026-05-16,65658.12,credit,revenue,Sylhet Tea & Souvenirs,Customer payment received from Sylhet Tea & Souvenirs Phone: 01719998877 Ref: TIN-6655-2233,false
+TXN-2026-0032,2026-05-17,45000.0,debit,loan_emi,Standard Chartered Bank Loan EMI,Bank transfer debit to Standard Chartered Bank Loan EMI on account of loan_emi voucher #1031,false
+TXN-2026-0033,2026-05-19,76054.61,credit,revenue,Padma Crafts Ltd,Customer payment received from Padma Crafts Ltd Phone: 01611889900 Ref: TIN-3321-7788,false
+TXN-2026-0034,2026-05-21,45000.0,debit,loan_emi,Standard Chartered Bank Loan EMI,Bank transfer debit to Standard Chartered Bank Loan EMI on account of loan_emi voucher #1033,false
+TXN-2026-0035,2026-05-22,45000.0,debit,loan_emi,Standard Chartered Bank Loan EMI,Bank transfer debit to Standard Chartered Bank Loan EMI on account of loan_emi voucher #1034,false
+TXN-2026-0036,2026-05-24,73273.93,credit,revenue,Apex Retailers Ltd,Customer payment received from Apex Retailers Ltd Phone: 01819223344 Ref: TIN-7712-3319,false
+TXN-2026-0037,2026-05-25,54903.21,debit,supplier_raw_materials,Sonargaon Brass & Metal Artisans,Bank transfer debit to Sonargaon Brass & Metal Artisans on account of supplier_raw_materials voucher #1036,false
+TXN-2026-0038,2026-05-27,59902.07,credit,revenue,Bengal Heritage Gift Shop,Customer payment received from Bengal Heritage Gift Shop Phone: 01715443322 Ref: TIN-4422-1109,false
+TXN-2026-0039,2026-05-28,12384.11,debit,utilities,DESCO Commercial Electricity,Bank transfer debit to DESCO Commercial Electricity on account of utilities voucher #1038,false
+TXN-2026-0040,2026-05-30,75538.43,credit,revenue,Bengal Heritage Gift Shop,Customer payment received from Bengal Heritage Gift Shop Phone: 01715443322 Ref: TIN-4422-1109,false
+TXN-2026-0041,2026-05-31,44914.8,debit,supplier_raw_materials,Dhaka Textiles & Weaving Mill,Bank transfer debit to Dhaka Textiles & Weaving Mill on account of supplier_raw_materials voucher #1040,false
+TXN-2026-0042,2026-06-02,63772.39,debit,supplier_raw_materials,Dhaka Textiles & Weaving Mill,Bank transfer debit to Dhaka Textiles & Weaving Mill on account of supplier_raw_materials voucher #1041,false
+TXN-2026-0043,2026-06-03,63032.23,credit,revenue,POS Merchant Settlement CityBank,Customer payment received from POS Merchant Settlement CityBank Phone: 01311223344 Ref: TIN-1122-3344,false
+TXN-2026-0044,2026-06-05,70155.0,debit,rent,Gulshan Showroom Commercial Lease,Bank transfer debit to Gulshan Showroom Commercial Lease on account of rent voucher #1043,false
+TXN-2026-0045,2026-06-06,74663.16,credit,revenue,Bengal Heritage Gift Shop,Customer payment received from Bengal Heritage Gift Shop Phone: 01715443322 Ref: TIN-4422-1109,false
+TXN-2026-0046,2026-06-08,19284.39,debit,utilities,DESCO Commercial Electricity,Bank transfer debit to DESCO Commercial Electricity on account of utilities voucher #1045,false
+TXN-2026-0047,2026-06-09,59286.15,credit,revenue,Biman Bangladesh Duty Free,Customer payment received from Biman Bangladesh Duty Free Phone: 01811556677 Ref: TIN-9988-7766,false
+TXN-2026-0048,2026-06-11,45490.34,debit,supplier_raw_materials,Sonargaon Brass & Metal Artisans,Bank transfer debit to Sonargaon Brass & Metal Artisans on account of supplier_raw_materials voucher #1047,false
+TXN-2026-0049,2026-06-12,55061.58,debit,logistics,Sundarban Courier & Logistics,Bank transfer debit to Sundarban Courier & Logistics on account of logistics voucher #1048,false
+TXN-2026-0050,2026-06-14,81934.69,credit,revenue,POS Merchant Settlement CityBank,Customer payment received from POS Merchant Settlement CityBank Phone: 01311223344 Ref: TIN-1122-3344,false
+TXN-2026-0051,2026-06-15,13417.34,debit,utilities,DESCO Commercial Electricity,Bank transfer debit to DESCO Commercial Electricity on account of utilities voucher #1050,false
+TXN-2026-0052,2026-06-17,70285.79,credit,revenue,Dhaka Handloom Emporium,Customer payment received from Dhaka Handloom Emporium Phone: 01912334455 Ref: TIN-5511-9920,false
+TXN-2026-0053,2026-06-18,62159.56,debit,supplier_raw_materials,Chittagong Jute & Crafts Works,Bank transfer debit to Chittagong Jute & Crafts Works on account of supplier_raw_materials voucher #1052,false
+TXN-2026-0054,2026-06-20,59585.24,credit,revenue,Apex Retailers Ltd,Customer payment received from Apex Retailers Ltd Phone: 01819223344 Ref: TIN-7712-3319,false
+TXN-2026-0055,2026-06-21,63347.89,debit,supplier_raw_materials,Sonargaon Brass & Metal Artisans,Bank transfer debit to Sonargaon Brass & Metal Artisans on account of supplier_raw_materials voucher #1054,false
+TXN-2026-0056,2026-06-23,16048.57,debit,utilities,DESCO Commercial Electricity,Bank transfer debit to DESCO Commercial Electricity on account of utilities voucher #1055,false
+TXN-2026-0057,2026-06-24,66448.58,credit,revenue,POS Merchant Settlement CityBank,Customer payment received from POS Merchant Settlement CityBank Phone: 01311223344 Ref: TIN-1122-3344,false
+TXN-2026-0058,2026-06-26,15293.2,debit,utilities,Titas Gas Transmission Co,Bank transfer debit to Titas Gas Transmission Co on account of utilities voucher #1057,false
+TXN-2026-0059,2026-06-27,75408.5,credit,revenue,Acme Corp Bangladesh,Customer payment received from Acme Corp Bangladesh Phone: 01711002233 Ref: TIN-9821-4412,false
+TXN-2026-0060,2026-06-29,59734.51,debit,supplier_raw_materials,Chittagong Jute & Crafts Works,Bank transfer debit to Chittagong Jute & Crafts Works on account of supplier_raw_materials voucher #1059,false
+TXN-2026-0061,2026-06-30,78057.96,credit,revenue,Padma Crafts Ltd,Customer payment received from Padma Crafts Ltd Phone: 01611889900 Ref: TIN-3321-7788,false
+TXN-2026-0062,2026-07-02,88863.0,debit,payroll,Staff Monthly Payroll & Wages,Bank transfer debit to Staff Monthly Payroll & Wages on account of payroll voucher #1061,false
+TXN-2026-0063,2026-07-03,70155.0,debit,rent,Dhanmondi Retail Outlet Rent,Bank transfer debit to Dhanmondi Retail Outlet Rent on account of rent voucher #1062,false
+TXN-2026-0064,2026-07-05,68611.71,credit,revenue,Dhaka Handloom Emporium,Customer payment received from Dhaka Handloom Emporium Phone: 01912334455 Ref: TIN-5511-9920,false
+TXN-2026-0065,2026-07-07,56124.0,debit,rent,Dhanmondi Retail Outlet Rent,Bank transfer debit to Dhanmondi Retail Outlet Rent on account of rent voucher #1064,false
+TXN-2026-0066,2026-07-08,81115.56,credit,revenue,Apex Retailers Ltd,Customer payment received from Apex Retailers Ltd Phone: 01819223344 Ref: TIN-7712-3319,false
+TXN-2026-0067,2026-07-10,56124.0,debit,rent,Dhanmondi Retail Outlet Rent,Bank transfer debit to Dhanmondi Retail Outlet Rent on account of rent voucher #1066,false
+TXN-2026-0068,2026-07-11,66217.42,credit,revenue,Dhaka Handloom Emporium,Customer payment received from Dhaka Handloom Emporium Phone: 01912334455 Ref: TIN-5511-9920,false
+TXN-2026-0069,2026-07-13,55074.73,debit,supplier_raw_materials,Sonargaon Brass & Metal Artisans,Bank transfer debit to Sonargaon Brass & Metal Artisans on account of supplier_raw_materials voucher #1068,false
+TXN-2026-0070,2026-07-14,67486.56,debit,logistics,Sundarban Courier & Logistics,Bank transfer debit to Sundarban Courier & Logistics on account of logistics voucher #1069,false
+TXN-2026-0071,2026-07-16,69658.17,credit,revenue,Sylhet Tea & Souvenirs,Customer payment received from Sylhet Tea & Souvenirs Phone: 01719998877 Ref: TIN-6655-2233,false
+TXN-2026-0072,2026-07-17,67833.76,debit,supplier_raw_materials,Chittagong Jute & Crafts Works,Bank transfer debit to Chittagong Jute & Crafts Works on account of supplier_raw_materials voucher #1071,false
+TXN-2026-0073,2026-07-19,62183.57,credit,revenue,Padma Crafts Ltd,Customer payment received from Padma Crafts Ltd Phone: 01611889900 Ref: TIN-3321-7788,false
+TXN-2026-0074,2026-07-20,56124.0,debit,rent,Gulshan Showroom Commercial Lease,Bank transfer debit to Gulshan Showroom Commercial Lease on account of rent voucher #1073,false
+TXN-2026-0075,2026-07-22,76957.23,credit,revenue,Apex Retailers Ltd,Customer payment received from Apex Retailers Ltd Phone: 01819223344 Ref: TIN-7712-3319,false
+TXN-2026-0076,2026-07-23,69434.24,debit,supplier_raw_materials,Chittagong Jute & Crafts Works,Bank transfer debit to Chittagong Jute & Crafts Works on account of supplier_raw_materials voucher #1075,false
+TXN-2026-0077,2026-07-25,62488.66,debit,logistics,Sundarban Courier & Logistics,Bank transfer debit to Sundarban Courier & Logistics on account of logistics voucher #1076,false
+TXN-2026-0078,2026-07-26,74792.52,credit,revenue,Dhaka Handloom Emporium,Customer payment received from Dhaka Handloom Emporium Phone: 01912334455 Ref: TIN-5511-9920,false
+TXN-2026-0079,2026-07-28,42822.09,debit,logistics,Sundarban Courier & Logistics,Bank transfer debit to Sundarban Courier & Logistics on account of logistics voucher #1078,false
+TXN-2026-0080,2026-07-29,83930.89,credit,revenue,POS Merchant Settlement CityBank,Customer payment received from POS Merchant Settlement CityBank Phone: 01311223344 Ref: TIN-1122-3344,false
+TXN-2026-0081,2026-07-31,62142.63,debit,logistics,Sundarban Courier & Logistics,Bank transfer debit to Sundarban Courier & Logistics on account of logistics voucher #1080,false
+TXN-2026-0082,2026-08-01,76388.47,credit,revenue,Bengal Heritage Gift Shop,Customer payment received from Bengal Heritage Gift Shop Phone: 01715443322 Ref: TIN-4422-1109,false
+TXN-2026-0083,2026-08-03,20524.35,debit,utilities,DESCO Commercial Electricity,Bank transfer debit to DESCO Commercial Electricity on account of utilities voucher #1082,false
+TXN-2026-0084,2026-08-04,45000.0,debit,loan_emi,Standard Chartered Bank Loan EMI,Bank transfer debit to Standard Chartered Bank Loan EMI on account of loan_emi voucher #1083,false
+TXN-2026-0085,2026-08-06,68143.0,credit,revenue,Sylhet Tea & Souvenirs,Customer payment received from Sylhet Tea & Souvenirs Phone: 01719998877 Ref: TIN-6655-2233,false
+TXN-2026-0086,2026-08-07,52197.2,debit,logistics,Sundarban Courier & Logistics,Bank transfer debit to Sundarban Courier & Logistics on account of logistics voucher #1085,false
+TXN-2026-0087,2026-08-09,61740.92,credit,revenue,Bengal Heritage Gift Shop,Customer payment received from Bengal Heritage Gift Shop Phone: 01715443322 Ref: TIN-4422-1109,false
+TXN-2026-0088,2026-08-10,88863.0,debit,payroll,Staff Monthly Payroll & Wages,Bank transfer debit to Staff Monthly Payroll & Wages on account of payroll voucher #1087,false
+TXN-2026-0089,2026-08-12,72653.2,credit,revenue,Bengal Heritage Gift Shop,Customer payment received from Bengal Heritage Gift Shop Phone: 01715443322 Ref: TIN-4422-1109,false
+TXN-2026-0090,2026-08-13,39740.24,debit,supplier_raw_materials,Dhaka Textiles & Weaving Mill,Bank transfer debit to Dhaka Textiles & Weaving Mill on account of supplier_raw_materials voucher #1089,false
+TXN-2026-0091,2026-08-15,45000.0,debit,loan_emi,Standard Chartered Bank Loan EMI,Bank transfer debit to Standard Chartered Bank Loan EMI on account of loan_emi voucher #1090,false
+TXN-2026-0092,2026-08-16,41868.25,credit,revenue,Acme Corp Bangladesh,Customer payment received from Acme Corp Bangladesh Phone: 01711002233 Ref: TIN-9821-4412,false
+TXN-2026-0093,2026-08-18,65559.6,debit,supplier_raw_materials,Dhaka Textiles & Weaving Mill,Bank transfer debit to Dhaka Textiles & Weaving Mill on account of supplier_raw_materials voucher #1092,false
+TXN-2026-0094,2026-08-19,50424.68,credit,revenue,Apex Retailers Ltd,Customer payment received from Apex Retailers Ltd Phone: 01819223344 Ref: TIN-7712-3319,false
+TXN-2026-0095,2026-08-21,70155.0,debit,rent,Dhanmondi Retail Outlet Rent,Bank transfer debit to Dhanmondi Retail Outlet Rent on account of rent voucher #1094,false
+TXN-2026-0096,2026-08-22,51177.02,credit,revenue,Bengal Heritage Gift Shop,Customer payment received from Bengal Heritage Gift Shop Phone: 01715443322 Ref: TIN-4422-1109,false
+TXN-2026-0097,2026-08-24,56280.6,debit,supplies,Paper & Packaging Supplies BD,Bank transfer debit to Paper & Packaging Supplies BD on account of supplies voucher #1096,false
+TXN-2026-0098,2026-08-26,70155.0,debit,rent,Gulshan Showroom Commercial Lease,Bank transfer debit to Gulshan Showroom Commercial Lease on account of rent voucher #1097,false
+TXN-2026-0099,2026-08-27,40712.3,credit,revenue,POS Merchant Settlement CityBank,Customer payment received from POS Merchant Settlement CityBank Phone: 01311223344 Ref: TIN-1122-3344,false
+TXN-2026-0100,2026-08-29,58990.44,debit,supplier_raw_materials,Chittagong Jute & Crafts Works,Bank transfer debit to Chittagong Jute & Crafts Works on account of supplier_raw_materials voucher #1099,false
+TXN-2026-0101,2026-08-30,47707.36,credit,revenue,Sylhet Tea & Souvenirs,Customer payment received from Sylhet Tea & Souvenirs Phone: 01719998877 Ref: TIN-6655-2233,false
+TXN-2026-0102,2026-09-01,19050.39,debit,utilities,Titas Gas Transmission Co,Bank transfer debit to Titas Gas Transmission Co on account of utilities voucher #1101,false
+TXN-2026-0103,2026-09-02,55200.94,credit,revenue,Acme Corp Bangladesh,Customer payment received from Acme Corp Bangladesh Phone: 01711002233 Ref: TIN-9821-4412,false
+TXN-2026-0104,2026-09-04,45000.0,debit,loan_emi,Standard Chartered Bank Loan EMI,Bank transfer debit to Standard Chartered Bank Loan EMI on account of loan_emi voucher #1103,false
+TXN-2026-0105,2026-09-05,39400.39,debit,supplier_raw_materials,Chittagong Jute & Crafts Works,Bank transfer debit to Chittagong Jute & Crafts Works on account of supplier_raw_materials voucher #1104,false
+TXN-2026-0106,2026-09-07,59017.78,credit,revenue,Sylhet Tea & Souvenirs,Customer payment received from Sylhet Tea & Souvenirs Phone: 01719998877 Ref: TIN-6655-2233,false
+TXN-2026-0107,2026-09-08,45556.76,debit,supplier_raw_materials,Chittagong Jute & Crafts Works,Bank transfer debit to Chittagong Jute & Crafts Works on account of supplier_raw_materials voucher #1106,false
+TXN-2026-0108,2026-09-10,51088.57,credit,revenue,Bengal Heritage Gift Shop,Customer payment received from Bengal Heritage Gift Shop Phone: 01715443322 Ref: TIN-4422-1109,false
+TXN-2026-0109,2026-09-11,51227.99,debit,supplier_raw_materials,Sonargaon Brass & Metal Artisans,Bank transfer debit to Sonargaon Brass & Metal Artisans on account of supplier_raw_materials voucher #1108,false
+TXN-2026-0110,2026-09-13,48878.84,credit,revenue,Padma Crafts Ltd,Customer payment received from Padma Crafts Ltd Phone: 01611889900 Ref: TIN-3321-7788,false
+TXN-2026-0111,2026-09-14,51923.66,debit,supplier_raw_materials,Chittagong Jute & Crafts Works,Bank transfer debit to Chittagong Jute & Crafts Works on account of supplier_raw_materials voucher #1110,false
+TXN-2026-0112,2026-09-16,40621.44,debit,logistics,Sundarban Courier & Logistics,Bank transfer debit to Sundarban Courier & Logistics on account of logistics voucher #1111,false
+TXN-2026-0113,2026-09-17,64069.89,credit,revenue,Acme Corp Bangladesh,Customer payment received from Acme Corp Bangladesh Phone: 01711002233 Ref: TIN-9821-4412,false
+TXN-2026-0114,2026-09-19,56124.0,debit,rent,Gulshan Showroom Commercial Lease,Bank transfer debit to Gulshan Showroom Commercial Lease on account of rent voucher #1113,false
+TXN-2026-0115,2026-09-20,49569.23,credit,revenue,POS Merchant Settlement CityBank,Customer payment received from POS Merchant Settlement CityBank Phone: 01311223344 Ref: TIN-1122-3344,false
+TXN-2026-0116,2026-09-22,70155.0,debit,rent,Gulshan Showroom Commercial Lease,Bank transfer debit to Gulshan Showroom Commercial Lease on account of rent voucher #1115,false
+TXN-2026-0117,2026-09-23,39939.11,credit,revenue,Acme Corp Bangladesh,Customer payment received from Acme Corp Bangladesh Phone: 01711002233 Ref: TIN-9821-4412,false
+TXN-2026-0118,2026-09-25,69674.03,debit,supplier_raw_materials,Dhaka Textiles & Weaving Mill,Bank transfer debit to Dhaka Textiles & Weaving Mill on account of supplier_raw_materials voucher #1117,false
+TXN-2026-0119,2026-09-26,62795.54,credit,revenue,Padma Crafts Ltd,Customer payment received from Padma Crafts Ltd Phone: 01611889900 Ref: TIN-3321-7788,false
+TXN-2026-0120,2026-09-28,12555.86,debit,utilities,Titas Gas Transmission Co,Bank transfer debit to Titas Gas Transmission Co on account of utilities voucher #1119,false
+TXN-2026-0121,2026-09-29,39643.9,credit,revenue,Biman Bangladesh Duty Free,Customer payment received from Biman Bangladesh Duty Free Phone: 01811556677 Ref: TIN-9988-7766,false
+TXN-2026-0122,2026-10-01,56124.0,debit,rent,Dhanmondi Retail Outlet Rent,Bank transfer debit to Dhanmondi Retail Outlet Rent on account of rent voucher #1121,false
+TXN-2026-0123,2026-10-02,52375.41,credit,revenue,Acme Corp Bangladesh,Customer payment received from Acme Corp Bangladesh Phone: 01711002233 Ref: TIN-9821-4412,false
+TXN-2026-0124,2026-10-04,39411.69,debit,logistics,Sundarban Courier & Logistics,Bank transfer debit to Sundarban Courier & Logistics on account of logistics voucher #1123,false
+TXN-2026-0125,2026-10-05,36714.96,credit,revenue,Sylhet Tea & Souvenirs,Customer payment received from Sylhet Tea & Souvenirs Phone: 01719998877 Ref: TIN-6655-2233,false
+TXN-2026-0126,2026-10-07,50085.51,credit,revenue,Biman Bangladesh Duty Free,Customer payment received from Biman Bangladesh Duty Free Phone: 01811556677 Ref: TIN-9988-7766,false
+TXN-2026-0127,2026-10-08,36706.39,credit,revenue,Dhaka Handloom Emporium,Customer payment received from Dhaka Handloom Emporium Phone: 01912334455 Ref: TIN-5511-9920,false
+TXN-2026-0128,2026-10-10,60540.28,credit,revenue,Apex Retailers Ltd,Customer payment received from Apex Retailers Ltd Phone: 01819223344 Ref: TIN-7712-3319,false

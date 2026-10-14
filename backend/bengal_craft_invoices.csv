@@ -1,0 +1,57 @@
+id,invoice_number,debtor_name,debtor_email,amount,issued_date,due_date,paid_date,status,p_delay,predicted_delay_days,risk_level
+INV-HIST-001,BCR-HIST-001,Acme Corp Bangladesh,accounts@acmecorp.bd,38361.66,2025-10-01,2025-10-31,2025-11-18,paid,0.45,18,medium
+INV-HIST-002,BCR-HIST-002,Apex Retailers Ltd,accounts@apexreta.bd,156666.45,2025-10-08,2025-11-07,2025-11-12,paid,0.12,5,low
+INV-HIST-003,BCR-HIST-003,Dhaka Handloom Emporium,accounts@dhakahan.bd,103736.23,2025-10-15,2025-11-14,2025-12-26,paid,0.95,42,high
+INV-HIST-004,BCR-HIST-004,Bengal Heritage Gift Shop,accounts@bengalhe.bd,73011.99,2025-10-22,2025-11-21,2025-12-07,paid,0.4,16,medium
+INV-HIST-005,BCR-HIST-005,Padma Crafts Ltd,accounts@padmacra.bd,32749.62,2025-10-29,2025-11-28,2025-11-28,paid,0.1,0,low
+INV-HIST-006,BCR-HIST-006,Sylhet Tea & Souvenirs,accounts@sylhette.bd,106748.86,2025-11-05,2025-12-05,2025-12-12,paid,0.17,7,low
+INV-HIST-007,BCR-HIST-007,POS Merchant Settlement CityBank,accounts@posmerch.bd,135219.25,2025-11-12,2025-12-12,2025-12-14,paid,0.1,2,low
+INV-HIST-008,BCR-HIST-008,Biman Bangladesh Duty Free,accounts@bimanban.bd,207267.72,2025-11-19,2025-12-19,2025-12-19,paid,0.1,0,low
+INV-HIST-009,BCR-HIST-009,Acme Corp Bangladesh,accounts@acmecorp.bd,155596.57,2025-11-26,2025-12-26,2026-01-23,paid,0.7,28,high
+INV-HIST-010,BCR-HIST-010,Apex Retailers Ltd,accounts@apexreta.bd,71543.76,2025-12-03,2026-01-02,2026-01-14,paid,0.3,12,medium
+INV-HIST-011,BCR-HIST-011,Dhaka Handloom Emporium,accounts@dhakahan.bd,50521.27,2025-12-10,2026-01-09,2026-02-06,paid,0.7,28,high
+INV-HIST-012,BCR-HIST-012,Bengal Heritage Gift Shop,accounts@bengalhe.bd,114158.79,2025-12-17,2026-01-16,2026-01-16,paid,0.1,0,low
+INV-HIST-013,BCR-HIST-013,Padma Crafts Ltd,accounts@padmacra.bd,26816.51,2025-12-24,2026-01-23,2026-01-30,paid,0.17,7,low
+INV-HIST-014,BCR-HIST-014,Sylhet Tea & Souvenirs,accounts@sylhette.bd,219698.62,2025-12-31,2026-01-30,2026-01-30,paid,0.1,0,low
+INV-HIST-015,BCR-HIST-015,POS Merchant Settlement CityBank,accounts@posmerch.bd,39285.84,2026-01-07,2026-02-06,2026-02-06,paid,0.1,0,low
+INV-HIST-016,BCR-HIST-016,Biman Bangladesh Duty Free,accounts@bimanban.bd,123647.52,2026-01-14,2026-02-13,2026-02-13,paid,0.1,0,low
+INV-HIST-017,BCR-HIST-017,Acme Corp Bangladesh,accounts@acmecorp.bd,206985.58,2026-01-21,2026-02-20,2026-03-10,paid,0.45,18,medium
+INV-HIST-018,BCR-HIST-018,Apex Retailers Ltd,accounts@apexreta.bd,196457.7,2026-01-28,2026-02-27,2026-03-07,paid,0.2,8,low
+INV-HIST-019,BCR-HIST-019,Dhaka Handloom Emporium,accounts@dhakahan.bd,80572.54,2026-02-04,2026-03-06,2026-04-10,paid,0.88,35,high
+INV-HIST-020,BCR-HIST-020,Bengal Heritage Gift Shop,accounts@bengalhe.bd,187580.27,2026-02-11,2026-03-13,2026-03-21,paid,0.2,8,low
+INV-HIST-021,BCR-HIST-021,Padma Crafts Ltd,accounts@padmacra.bd,144277.16,2026-02-18,2026-03-20,2026-03-27,paid,0.17,7,low
+INV-HIST-022,BCR-HIST-022,Sylhet Tea & Souvenirs,accounts@sylhette.bd,26525.51,2026-02-25,2026-03-27,2026-04-03,paid,0.17,7,low
+INV-HIST-023,BCR-HIST-023,POS Merchant Settlement CityBank,accounts@posmerch.bd,83378.86,2026-03-04,2026-04-03,2026-04-03,paid,0.1,0,low
+INV-HIST-024,BCR-HIST-024,Biman Bangladesh Duty Free,accounts@bimanban.bd,208091.35,2026-03-11,2026-04-10,2026-04-10,paid,0.1,0,low
+INV-HIST-025,BCR-HIST-025,Acme Corp Bangladesh,accounts@acmecorp.bd,76570.85,2026-03-18,2026-04-17,2026-05-05,paid,0.45,18,medium
+INV-HIST-026,BCR-HIST-026,Apex Retailers Ltd,accounts@apexreta.bd,169771.25,2026-03-25,2026-04-24,2026-04-29,paid,0.12,5,low
+INV-HIST-027,BCR-HIST-027,Dhaka Handloom Emporium,accounts@dhakahan.bd,78107.9,2026-04-01,2026-05-01,2026-06-12,paid,0.95,42,high
+INV-HIST-028,BCR-HIST-028,Bengal Heritage Gift Shop,accounts@bengalhe.bd,66072.78,2026-04-08,2026-05-08,2026-05-16,paid,0.2,8,low
+INV-HIST-029,BCR-HIST-029,Padma Crafts Ltd,accounts@padmacra.bd,64701.48,2026-04-15,2026-05-15,2026-05-17,paid,0.1,2,low
+INV-HIST-030,BCR-HIST-030,Sylhet Tea & Souvenirs,accounts@sylhette.bd,123554.77,2026-04-22,2026-05-22,2026-05-24,paid,0.1,2,low
+INV-HIST-031,BCR-HIST-031,POS Merchant Settlement CityBank,accounts@posmerch.bd,201540.62,2026-04-29,2026-05-29,2026-05-29,paid,0.1,0,low
+INV-HIST-032,BCR-HIST-032,Biman Bangladesh Duty Free,accounts@bimanban.bd,42998.2,2026-05-06,2026-06-05,2026-06-09,paid,0.1,4,low
+INV-HIST-033,BCR-HIST-033,Acme Corp Bangladesh,accounts@acmecorp.bd,186722.88,2026-05-13,2026-06-12,2026-06-30,paid,0.45,18,medium
+INV-HIST-034,BCR-HIST-034,Apex Retailers Ltd,accounts@apexreta.bd,25691.41,2026-05-20,2026-06-19,2026-06-24,paid,0.12,5,low
+INV-HIST-035,BCR-HIST-035,Dhaka Handloom Emporium,accounts@dhakahan.bd,149237.11,2026-05-27,2026-06-26,2026-07-24,paid,0.7,28,high
+INV-HIST-036,BCR-HIST-036,Bengal Heritage Gift Shop,accounts@bengalhe.bd,56508.49,2026-06-03,2026-07-03,2026-07-15,paid,0.3,12,medium
+INV-HIST-037,BCR-HIST-037,Padma Crafts Ltd,accounts@padmacra.bd,132577.68,2026-06-10,2026-07-10,2026-07-14,paid,0.1,4,low
+INV-HIST-038,BCR-HIST-038,Sylhet Tea & Souvenirs,accounts@sylhette.bd,134376.84,2026-06-17,2026-07-17,2026-07-17,paid,0.1,0,low
+INV-HIST-039,BCR-HIST-039,POS Merchant Settlement CityBank,accounts@posmerch.bd,39672.55,2026-06-24,2026-07-24,2026-07-24,paid,0.1,0,low
+INV-HIST-040,BCR-HIST-040,Biman Bangladesh Duty Free,accounts@bimanban.bd,131390.11,2026-07-01,2026-07-31,2026-08-02,paid,0.1,2,low
+INV-HIST-041,BCR-HIST-041,Acme Corp Bangladesh,accounts@acmecorp.bd,138589.37,2026-07-08,2026-08-07,2026-08-31,paid,0.6,24,medium
+INV-HIST-042,BCR-HIST-042,Apex Retailers Ltd,accounts@apexreta.bd,108808.41,2026-07-15,2026-08-14,2026-08-14,paid,0.1,0,low
+INV-HIST-043,BCR-HIST-043,Dhaka Handloom Emporium,accounts@dhakahan.bd,85110.38,2026-07-22,2026-08-21,2026-09-08,paid,0.45,18,medium
+INV-HIST-044,BCR-HIST-044,Bengal Heritage Gift Shop,accounts@bengalhe.bd,200290.3,2026-07-29,2026-08-28,2026-09-02,paid,0.12,5,low
+INV-HIST-045,BCR-HIST-045,Padma Crafts Ltd,accounts@padmacra.bd,158003.0,2026-08-05,2026-09-04,2026-09-04,paid,0.1,0,low
+INV-HIST-046,BCR-HIST-046,Sylhet Tea & Souvenirs,accounts@sylhette.bd,93967.33,2026-08-12,2026-09-11,2026-09-18,paid,0.17,7,low
+INV-HIST-047,BCR-HIST-047,POS Merchant Settlement CityBank,accounts@posmerch.bd,197406.27,2026-08-19,2026-09-18,2026-09-22,paid,0.1,4,low
+INV-HIST-048,BCR-HIST-048,Biman Bangladesh Duty Free,accounts@bimanban.bd,214898.22,2026-08-26,2026-09-25,2026-09-25,paid,0.1,0,low
+INV-2026-001,BCR-2026-001,Acme Corp Bangladesh (Md. Karim Ullah),accounts@acme-corp.bd,250000.0,2026-09-25,2026-10-25,,issued,0.78,28,high
+INV-2026-002,BCR-2026-002,Apex Retailers Ltd (Tariqul Islam),finance@apex-retail.bd,180000.0,2026-09-18,2026-10-18,,issued,0.42,10,medium
+INV-2026-003,BCR-2026-003,Dhaka Handloom Emporium,procurement@dhakahandloom.com,120000.0,2026-09-05,2026-10-05,,overdue,0.85,35,high
+INV-2026-004,BCR-2026-004,Bengal Heritage Gift Shop,billing@heritagecrafts.bd,75000.0,2026-08-28,2026-09-28,,overdue,0.65,22,high
+INV-2026-005,BCR-2026-005,Padma Crafts Ltd (Nusrat Jahan),nusrat@padmacrafts.org,320000.0,2026-10-02,2026-11-02,,issued,0.22,3,low
+INV-2026-006,BCR-2026-006,Sylhet Tea & Souvenirs,info@sylhetteas.bd,95000.0,2026-10-10,2026-11-10,,issued,0.28,4,low
+INV-2026-007,BCR-2026-007,Sonali Boutique House,sonali@boutique.bd,140000.0,2026-08-15,2026-09-15,2026-09-22,paid,0.35,7,medium
+INV-2026-008,BCR-2026-008,Jamuna Fair Trade Co,jamuna@fairtrade.org,210000.0,2026-08-01,2026-08-30,2026-09-08,paid,0.31,9,medium
