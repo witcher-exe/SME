@@ -24,49 +24,76 @@
 @media(max-width:550px){.page .data-table{width:100%;max-width:100%;overflow:auto}.section-tabs button{padding-left:10px;padding-right:10px;font-size:12px;flex-shrink:0}.section-tabs{overflow-x:auto}}
 @media(max-width:550px){.page .section-tabs{display:flex;flex-wrap:wrap}.page .section-tabs button{padding:12px 9px;font-size:11px}.page .section-tabs .pill{margin-left:0}}
 
-/* Reference palette is scoped exclusively to dark mode. White-mode rules above are unchanged. */
+/* Dark Mode: Graphite & Electric Copper Treasury Design from dark-mode-delight */
 html.dark {
  color-scheme: dark;
- --palette-lime: oklch(.923758 .187058 131.6986); /* #B7FF72 */
- --palette-secondary: oklch(.249474 .023569 157.1963); /* #18251D */
- --palette-tertiary: oklch(.307335 .027772 156.9147); /* #24342A */
- --palette-neutral: oklch(.973307 .004123 157.1784); /* #F4F7F5 */
- --palette-ink: oklch(.182389 .01346 159.6686);
- --palette-panel: oklch(.243456 .012645 160.2708);
- --palette-outline: oklch(.400604 .03138 153.4526);
- --palette-sage: oklch(.817853 .023299 151.5716);
- --palette-sage-muted: oklch(.676907 .029627 153.598);
- --palette-lime-dark: oklch(.34 .08 131.7);
- --palette-lime-mid: oklch(.69 .16 131.7);
- --palette-lime-pale: oklch(.965 .08 131.7);
- --background: var(--palette-ink);
- --foreground: var(--palette-neutral);
- --card: var(--palette-panel);
- --primary: var(--palette-lime);
- --primary-foreground: var(--palette-secondary);
- --secondary: var(--palette-secondary);
- --muted: var(--palette-tertiary);
- --muted-foreground: var(--palette-sage-muted);
- --accent: color-mix(in oklch, var(--palette-lime) 8%, var(--palette-secondary));
- --border: color-mix(in oklch, var(--palette-tertiary) 55%, var(--palette-outline));
- --warning: oklch(.88 .10 83);
- --warning-soft: oklch(.29 .027 83);
- --destructive: oklch(.842538 .086345 26.0538);
- --positive: var(--palette-lime-mid);
- --chart-optimistic: var(--palette-sage);
- --sidebar-background: var(--palette-secondary);
- --shadow-soft: 0 3px 14px oklch(.1 .01 155 / .18);
- --shadow-drawer: 0 0 60px oklch(.1 .01 155 / .6);
- --overlay: oklch(.1 .01 155 / .68);
- --font-sans: 'Hanken Grotesk', sans-serif;
- --font-display: 'Hanken Grotesk', sans-serif;
- --font-label: 'JetBrains Mono', monospace;
+ --radius: 0.5rem;
+ --background: oklch(0.115 0.002 260);
+ --foreground: oklch(0.94 0.002 260);
+ --card: oklch(0.17 0.002 260);
+ --card-foreground: var(--foreground);
+ --popover: oklch(0.205 0.002 260);
+ --popover-foreground: var(--foreground);
+ --primary: oklch(0.67 0.22 38);
+ --primary-foreground: oklch(0.99 0 0);
+ --secondary: oklch(0.26 0.002 260);
+ --secondary-foreground: oklch(0.94 0 0);
+ --muted: oklch(0.21 0.002 260);
+ --muted-foreground: oklch(0.59 0.005 260);
+ --accent: oklch(0.255 0.002 260);
+ --accent-foreground: var(--foreground);
+ --border: oklch(0.29 0.003 260 / 0.62);
+ --input: oklch(0.32 0.002 260);
+ --ring: var(--primary);
+ --positive: oklch(0.75 0.13 156);
+ --success: oklch(0.75 0.13 156);
+ --destructive: oklch(0.68 0.18 25);
+ --danger: oklch(0.68 0.18 25);
+ --warning: oklch(0.81 0.13 80);
+ --warning-soft: oklch(0.24 0.03 80);
+ --chart-optimistic: oklch(0.68 0.035 158);
+ --sidebar-background: oklch(0.135 0.002 260);
+ --shadow-soft: 0 8px 30px oklch(0.05 0 0 / 0.18);
+ --shadow-drawer: 0 0 60px oklch(0.05 0 0 / 0.7);
+ --overlay: oklch(0.08 0.002 260 / 0.8);
+ --chart-grid: oklch(0.32 0.002 260 / 0.5);
+ --chart-upper: oklch(0.68 0.035 158);
+ --chart-lower: oklch(0.45 0.06 35);
+ --chart-neutral: oklch(0.59 0.003 260);
+ --surface-light: oklch(0.34 0.002 260 / 0.45);
+ --surface-dim: oklch(0.17 0.002 260 / 0.1);
+ --shell-light: oklch(0.4 0.002 260 / 0.35);
+ --panel-gradient: linear-gradient(145deg, var(--surface-light), var(--surface-dim) 65%);
+ --panel-shadow: 0 8px 30px oklch(0.05 0 0 / 0.08);
 }
-.dark .topbar { background: var(--palette-secondary); }
-.dark .metric-icon { color: var(--palette-sage); }
-.dark .eyebrow, .dark .nav-label, .dark .font-mono { font-family: var(--font-label); }
-.dark .company-select option { background: var(--palette-secondary); color: var(--foreground); }
+.dark .app-sidebar { background: var(--sidebar-background); border-color: var(--border); }
+.dark .topbar { background: oklch(0.145 0.002 260); border-color: var(--border); }
+.dark .main-shell { background: radial-gradient(ellipse at 73% 0%, var(--shell-light), transparent 48%), var(--background); }
+.dark .panel { background: var(--card); border-color: var(--border); box-shadow: var(--panel-shadow); }
+.dark .metric-card { background: var(--panel-gradient), var(--card); border-color: var(--border); }
+.dark .metric-icon { color: var(--primary); background: var(--muted); }
+.dark .insight-panel { background: color-mix(in oklch, var(--primary) 10%, var(--card)); border-color: color-mix(in oklch, var(--primary) 28%, var(--border)); }
+.dark .runway-panel { background: var(--card); border-color: var(--border); }
+.dark .company-select option { background: var(--card); color: var(--foreground); }
 .dark input[type='checkbox'], .dark progress { accent-color: var(--primary); }
-.dark .range-control { accent-color: var(--palette-lime); }
-.dark .insight-panel { background: var(--accent); }
-.dark [data-sonner-toast] { --normal-bg: var(--card); --normal-text: var(--foreground); --normal-border: var(--border); --success-bg: var(--secondary); --success-text: var(--primary); --success-border: var(--border); --error-bg: var(--warning-soft); --error-text: var(--destructive); --error-border: var(--border); --warning-bg: var(--warning-soft); --warning-text: var(--warning); --warning-border: var(--border); --info-bg: var(--secondary); --info-text: var(--palette-sage); --info-border: var(--border); }
+.dark .range-control { accent-color: var(--primary); }
+.dark .data-table th { background: var(--muted); color: var(--muted-foreground); }
+.dark .data-table td { border-color: var(--border); }
+.dark .data-table tbody tr:hover { background: var(--muted); }
+.dark [data-sonner-toast] {
+  --normal-bg: var(--card);
+  --normal-text: var(--foreground);
+  --normal-border: var(--border);
+  --success-bg: var(--secondary);
+  --success-text: var(--positive);
+  --success-border: var(--border);
+  --error-bg: var(--warning-soft);
+  --error-text: var(--destructive);
+  --error-border: var(--border);
+  --warning-bg: var(--warning-soft);
+  --warning-text: var(--warning);
+  --warning-border: var(--border);
+  --info-bg: var(--secondary);
+  --info-text: var(--foreground);
+  --info-border: var(--border);
+}
